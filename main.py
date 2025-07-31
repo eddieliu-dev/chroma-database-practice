@@ -2,8 +2,8 @@ import chromadb
 import uuid
 
 client = chromadb.CloudClient(
-    api_key='ck-HdWFV3R2VLngyLL8NQ3dpf4FCzUu65DJxs71YgVAuYGU',
-    tenant='57dca400-ce03-4b94-849c-87be7cb2a8b0',
+    api_key='',
+    tenant='',
     database='Test'
 )
 
@@ -24,7 +24,7 @@ with open("documents_dup_part_1_part_1", "r", encoding="utf-8") as file:
 
 results = collection.query(
     query_texts=[
-        "有没有体育相关的新闻?"
+        "2023-07-27的新闻有什么?"
     ],
     n_results=5
 )
